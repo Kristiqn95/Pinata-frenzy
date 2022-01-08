@@ -11,9 +11,9 @@ export default class Footer extends Container {
         this._body.rotation = -Math.PI / 4;
 
         this.name = 'cactus';
-
+  
     }
-
+  
     /**
      * Makes cactus dance
      */
@@ -31,8 +31,7 @@ export default class Footer extends Container {
                 ease: danceEase,
             });
         }
-        else
-        if(Math.abs(this._body.rotation - to) < eps) {
+        else if(Math.abs(this._body.rotation - to) < eps) {
             gsap.to(this._body, {
                 rotation: from,
                 duration: dur,
@@ -40,4 +39,4 @@ export default class Footer extends Container {
             });
         }
     }
-}
+  }

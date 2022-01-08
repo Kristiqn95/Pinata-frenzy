@@ -6,9 +6,8 @@ import Chili from './Chili';
 export default class Footer extends Container {
     constructor() {
         super();
-
+        
         this._elements = new Container();
-
         this.addChild(this._elements);
 
         this._body = Sprite.from('pinata');
@@ -25,22 +24,18 @@ export default class Footer extends Container {
 
         this.addListener('click', () => {
             const chili = new Chili();
-
             this._elements.addChild(chili);
-
-            setInterval(() => chili.update(), 25);
+            setInterval(()=>chili.update(),25);
         });
 
-        for(let i = 0; i < 20; i++)
-        {
+        for(let i = 0; i < 20; i++) {
             this.particles.push(new Particle());
-
             this._elements.addChild(this.particles[i]);
-
-            setInterval(() => this.particles[i].update(),  25);
+            setInterval(()=>this.particles[i].update(),25);
         }
+  
     }
-
+  
     /**
      * Makes pinata dance
      */
@@ -58,8 +53,7 @@ export default class Footer extends Container {
                 ease: danceEase,
             });
         }
-        else
-        if(Math.abs(this._body.rotation - to) < eps) {
+        else if(Math.abs(this._body.rotation - to) < eps) {
             gsap.to(this._body, {
                 rotation: from,
                 duration: dur,
@@ -67,4 +61,4 @@ export default class Footer extends Container {
             });
         }
     }
-}
+  }

@@ -25,7 +25,7 @@ export default class Chili extends Sprite {
     update() {
         if(this.alpha <= 0) {
             if(!this._destroyed) {
-                this._destroy();
+                this.destroy();
                 this._destroyed = true;
             }
         }
