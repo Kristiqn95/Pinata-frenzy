@@ -1,5 +1,5 @@
 import { Howl } from 'howler';
-import { Loader, Texture, Spritesheet } from 'pixi.js';
+import { Loader, Texture, Spritesheet } from 'pixi.js-legacy';
 import config from '../config';
 
 const context = require.context('../assets', true, /\.(jpg|png|wav|m4a|ogg|mp3)$/im);

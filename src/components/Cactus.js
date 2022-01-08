@@ -1,4 +1,4 @@
-import { Container, Sprite } from 'pixi.js';
+import { Container, Sprite } from 'pixi.js-legacy';
 import gsap from 'gsap';
 
 export default class Cactus extends Container {

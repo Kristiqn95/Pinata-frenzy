@@ -1,4 +1,4 @@
-import { Sprite, Texture } from 'pixi.js';
+import { Sprite, Texture } from 'pixi.js-legacy';
 
 export default class Chili extends Sprite {
     constructor(){
@@ -16,7 +16,7 @@ export default class Chili extends Sprite {
         this.y = 0;
         this._speed = {
             x: (Math.random() - 0.5),
-            y: Math.random() * 5 + 3,
+            y: Math.random() * 2 + 1,
         }
     }
     /**

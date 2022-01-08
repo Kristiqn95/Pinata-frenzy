@@ -1,4 +1,4 @@
-import { Graphics } from 'pixi.js';
+import { Graphics } from 'pixi.js-legacy';
 
 export default class Particle extends Graphics {
     constructor() {

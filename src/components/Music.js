@@ -1,4 +1,4 @@
-import { utils } from 'pixi.js';
+import { utils } from 'pixi.js-legacy';
 import Assets from '../core/AssetManager';
 
 export default class Music extends utils.EventEmitter {

@@ -1,4 +1,4 @@
-import { Container, Sprite } from 'pixi.js';
+import { Container, Sprite } from 'pixi.js-legacy';
 import gsap from 'gsap';
 import Particle from './Particle';
 import Chili from './Chili';
@@ -15,6 +15,7 @@ export default class Pinata extends Container {
         this.addChild(this._body);
 
         this._body.rotation = -Math.PI / 4;
+        this._body.interactive = true;
 
         this.interactive = true;
         this.buttonMode = true;
@@ -22,7 +23,7 @@ export default class Pinata extends Container {
 
         this.particles = [];
 
-        this.addListener('click', () => {
+        this._body.addListener('click', () => {
             const chili = new Chili();
             this._elements.addChild(chili);
             setInterval(()=>chili.update(),25);

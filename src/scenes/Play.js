@@ -18,6 +18,8 @@ export default class Play extends Scene {
     const pinata = new Pinata();
     const cactus1 = new Cactus('cactus-1');
     const cactus2 = new Cactus('cactus-2');
+    cactus1.name = 'cactus-1';
+    cactus2.name = 'cactus-2';
     this.addChild(pinata);
     this.addChild(cactus1);
     this.addChild(cactus2);
