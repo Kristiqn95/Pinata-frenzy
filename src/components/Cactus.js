@@ -1,7 +1,7 @@
 import { Container, Sprite } from 'pixi.js';
 import gsap from 'gsap';
 
-export default class Footer extends Container {
+export default class Cactus extends Container {
     constructor(sprite) {
         super();
         this._body = Sprite.from(sprite);

@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import Particle from './Particle';
 import Chili from './Chili';
 
-export default class Footer extends Container {
+export default class Pinata extends Container {
     constructor() {
         super();
         
