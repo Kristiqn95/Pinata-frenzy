@@ -5,7 +5,7 @@ export default class Music extends utils.EventEmitter {
   constructor() {
     super();
 
-    Assets.sounds.mariachi.play();
+    //Assets.sounds.mariachi.play();
     Assets.sounds.mariachi.loop(true);
 
     setInterval(() => this.emit(Music.events.BEAT), 312);
